@@ -1,12 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kolab MVP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #4285F4;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5em; }
+    header p { font-size: 1.1em; margin-top: 10px; opacity: 0.9; }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .section h2 {
+      color: #4285F4;
+      margin-bottom: 15px;
+      font-size: 1.4em;
+    }
+    .section p {
+      line-height: 1.7;
+      color: #555;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .feature-item {
+      background: #f0f4ff;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 0.95em;
+      color: #444;
+    }
+    .feature-item span {
+      font-size: 1.5em;
+      display: block;
+      margin-bottom: 5px;
+    }
+    footer {
+      background: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #4285F4;
+      text-decoration: none;
+    }
+    .privacy-link {
+      display: inline-block;
+      margin-top: 20px;
+      background: #4285F4;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .privacy-link:hover { background: #3367d6; }
+  </style>
 </head>
 <body>
-  <h1>Kolab MVP</h1>
-  <p>Kolab MVP is an application that helps users collaborate and work together efficiently.</p>
-  <p>Contact: youremail@gmail.com</p>
-  <a href="/privacy.html">Privacy Policy</a>
+
+  <header>
+    <h1>Kolab MVP</h1>
+    <p>A simple and powerful collaboration application</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>About Kolab MVP</h2>
+      <p>
+        Kolab MVP is a collaboration application designed to help users connect, communicate,
+        and work together efficiently. Our app allows users to sign in securely using their
+        Google account to access collaboration features in a simple and intuitive interface.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>What Our App Does</h2>
+      <p>Kolab MVP provides the following features to its users:</p>
+      <div class="features">
+        <div class="feature-item">
+          <span>🔐</span>
+          Secure Google Sign-In authentication
+        </div>
+        <div class="feature-item">
+          <span>🤝</span>
+          Team collaboration tools
+        </div>
+        <div class="feature-item">
+          <span>📋</span>
+          Project and task management
+        </div>
+        <div class="feature-item">
+          <span>💬</span>
+          Real-time communication
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>How We Use Your Data</h2>
+      <p>
+        We use Google Sign-In only for authentication purposes. We do not sell or share
+        your personal information with any third parties. Your data is kept safe and secure.
+      </p>
+      <br/>
+      <a href="privacy.html" class="privacy-link">📄 View Privacy Policy</a>
+    </div>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions about Kolab MVP, feel free to reach out to us.</p>
+      <br/>
+      <p>📧 Email: <strong>your-email@gmail.com</strong></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Kolab MVP. All rights reserved.</p>
+    <br/>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+
 </body>
 </html>
